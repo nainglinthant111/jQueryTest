@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Hide Test</title>
+</head>
+<body>
+    <p>If you clicl on the "hide" button, I will disppear.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            
+            $("#show").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
+</body>
+</html>

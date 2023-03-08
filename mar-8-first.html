@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery first program</title>
+</head>
+<body>
+    <h2>This is a header.</h2>
+    <p>This is aparagraph.</p>
+    <button>Click me</button>
+    
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        $("button").click(function() {
+            $("p").hide();
+        });
+    });
+    
+</script>
+</body>
+</html>
