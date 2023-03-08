@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+    
+       .square{
+        background: #45b388;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+       }
+       
+    </style>
+</head>
+<body>
+<button>Start Animation</button>
+<div style="background:red ;height: 100px;width: 280px; position: absolute;">Hello</div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function(){
+                var div=$("div");
+                div.animate({left:'200px'},"slow");
+                div.animate({fontsize:'5em'},5000)
+                    
+            });
+        });
+    </script>
+    
+</body>
+</html>
